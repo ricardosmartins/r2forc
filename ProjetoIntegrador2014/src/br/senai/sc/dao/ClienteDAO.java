@@ -15,7 +15,8 @@ public class ClienteDAO {
 	private static ClienteDAO instance;
 	private ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
 	private Connection con = ConnectionUtil.getConnection();
-
+	private String teste = "teste";
+	
 	public static ClienteDAO getInstace() {
 		if (instance == null) {
 			instance = new ClienteDAO();
